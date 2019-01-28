@@ -31,11 +31,11 @@ namespace paintbysadness
         //Color Toggle
         private void RED_Click(object sender, RoutedEventArgs e)
         {
-            happy_little_trees.DefaultDrawingAttributes.Color = Colors.Red;
+            happy_little_trees.DefaultDrawingAttributes.Color = Color.FromRgb(230, 20, 20);
         }
         private void BLUE_Click(object sender, RoutedEventArgs e)
         {
-            happy_little_trees.DefaultDrawingAttributes.Color = Colors.Blue;
+            happy_little_trees.DefaultDrawingAttributes.Color = Color.FromRgb(60,10,255);
         }
         private void GREEN_Click(object sender, RoutedEventArgs e)
         {
