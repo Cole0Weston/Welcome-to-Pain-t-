@@ -1,0 +1,46 @@
+﻿<Window x:Class="paintbysadness.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:paintbysadness"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="535*"/>
+            <ColumnDefinition Width="257*"/>
+        </Grid.ColumnDefinitions>
+        <InkCanvas x:Name="happy_little_trees" HorizontalAlignment="Left" Height="367" Margin="10,42,0,0" VerticalAlignment="Top" Width="772" Background="White" Grid.ColumnSpan="2"/>
+        <Menu x:Name="Pallet" Background="Black" Margin="10,10,0,377" Grid.ColumnSpan="2">
+            <Button x:Name="RED" BorderBrush="White" Background="Red" FontFamily="SAS Monospace Bold" Height="22" Width="114" Content="RED" Foreground="#FFFFEAEA" FontSize="18" Click="RED_Click"/>
+            <Button x:Name="GREEN" BorderBrush="White" Background="Lime" FontFamily="SAS Monospace Bold" Height="22" Width="114" Content="GREEN" Foreground="Black" FontSize="18" HorizontalAlignment="Center" Click="GREEN_Click"/>
+            <Button x:Name="BLUE" BorderBrush="White" Background="Blue" FontFamily="SAS Monospace Bold" Height="22" Width="114" Content="BLUE" Foreground="White" FontSize="18" Click="BLUE_Click"/>
+            <Button x:Name="BLACK" BorderBrush="White" Background="Black" FontFamily="SAS Monospace Bold" Height="22" Width="114" Content="BLACK" Foreground="White" FontSize="18" Click="BLACK_Click"/>
+            <Button x:Name="ERASER" BorderBrush="White" Background="White" FontFamily="SAS Monospace Bold" Height="22" Width="114" Content="ERASER" Foreground="#FFFF00E8" FontSize="18" Click="ERASER_Click"/>
+            <Button x:Name="CLEAR" BorderBrush="White" Background="#FF8C918C" FontFamily="Sitka Text" Height="22" Width="114" Content="CLEAR" Foreground="#FFCF2525" Click="CLEAR_Click"/>
+        </Menu>
+        <Button Click="SMALL_Click" Margin="78,359,129,18" RenderTransformOrigin="5.25,0.684" Grid.Column="1">
+            <Button.Template>
+                <ControlTemplate>
+                    <Ellipse x:Name="Small" Fill="Black" HorizontalAlignment="Center" Height="20" Margin="0,0,0,0" Stroke="White" VerticalAlignment="Center" Width="20" Grid.Column="1" RenderTransformOrigin="2.733,0.567"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Click="MEDIUM_Click" Margin="128,359,81,18" RenderTransformOrigin="5.25,0.684" Grid.Column="1">
+            <Button.Template>
+                <ControlTemplate>
+                    <Ellipse x:Name="MEDIUM" Fill="Black" HorizontalAlignment="Center" Height="30" Margin="0,0,0,0" Stroke="White" VerticalAlignment="Center" Width="30" Grid.Column="1" RenderTransformOrigin="2.733,0.567"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Click="LARGE_Click" Margin="176,347,10,10" RenderTransformOrigin="5.25,0.684" Grid.Column="1">
+            <Button.Template>
+                <ControlTemplate>
+                    <Ellipse x:Name="LARGE" Fill="Black" HorizontalAlignment="Center" Height="40" Margin="-0,-0,-0,-0" Stroke="White" VerticalAlignment="Center" Width="40" Grid.Column="1" RenderTransformOrigin="2.733,0.567"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+    </Grid>
+</Window>
