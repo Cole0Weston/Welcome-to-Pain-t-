@@ -1,4 +1,9 @@
-﻿using System;
+﻿//NAME: Cole Weston
+//DATE: 1/30/2019
+//FILE NAME: paintbysadness.csproj
+//PURPOSE: Allows user to paint sad little trees in multiple colors and sizes.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
